@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+
+        html {
+            margin-left: auto;
+            margin-right: auto;
+            width:1150px;
+            font-family: 'Cinzel', serif;
+            background-color:rgb(241, 239, 232);
+            color:rgb(35, 39, 35);
+        }
+        #lewo {
+            float:left;
+            width:30%;
+            background-color: rgb(109, 139, 116);
+            margin: 10px;
+            height:1450px;
+
+            background-image: linear-gradient(rgb(109, 139, 116), rgb(95, 113, 97));
+        }
+
+        #prawo {
+            float:left;
+            width:60%;
+            background-color:rgb(208, 201, 192);
+            margin: 10px;
+            height:1450px;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size:45px;
+            color:rgb(208, 201, 192);
+            text-shadow: 5px 5px 5px rgb(95, 113, 97);
+        }
+
+        p {
+            margin: 25px;
+        }
+
+        #zdjecie {
+            margin: 35px;
+            margin-left: 53px;
+            margin-top:10px;
+        }
+
+        header {
+            background-color: rgb(208, 201, 192);
+            font-weight:800 ;
+            font-size: 35px;
+            margin-top: 20px;
+            margin:10px;
+            padding:10px;
+            color:rgb(95, 113, 97);
+            box-shadow: 5px 5px 5px rgb(95, 113, 97);
+            text-align:center;
+        }
+
+        h3 {
+            background-color: rgb(95, 113, 97);
+            font-size: 25;
+            margin: 15px;
+            color: rgb(231, 227, 221);
+            margin:5px;
+            padding:5px;
+            text-shadow: 2px 2px 5px rgb(35, 39, 35);
+        }
+
+        .gwiazdki {
+            width: 120px;
+            height: 25px;
+            display: block;
+          margin-left: auto;
+         margin-right: auto;
+        }
+
+        .umiejetnosci2 {
+            font-size: 20px;
+            margin:20px;
+            margin-bottom:30px;
+            margin-top:30px;
+            text-align:left;
+            color:rgb(208, 201, 192);
+        }
+
+       .doswiadczenie1 {
+        background-color: rgb(109, 139, 116);
+        font-size:30px;
+        color:rgb(231, 227, 221);
+        text-shadow: 5px 5px 5px rgb(95, 113, 97);
+      
+       }
+
+       .tabele {
+        width:95%;
+        border: 2px solid rgb(95, 113, 97);
+        margin-left: 15px;
+        margin-right:25px;
+        margin-top:5px;
+        
+       }
+
+       .tabzawartosc1 {
+        border: 2px solid rgb(95, 113, 97);
+        background-color:rgb(231, 227, 221);
+       
+       }
+
+       .tabdaty1 {
+        border: 2px solid rgb(95, 113, 97);
+        text-align:center;
+        font-size: 25px;
+        margin:5px;
+        margin-top:0px;
+
+        background-color:rgb(231, 227, 221);
+       }
+
+       .stanowisko2 {
+        font-size: 25px;
+        margin:10px;
+       }
+
+       .tabszkola1 {
+        border: 2px solid rgb(95, 113, 97);
+        font-size:25px;
+        background-color: rgb(231, 227, 221);
+       }
+
+       #stanowisko1 {
+        font-size:25px;
+        color:rgb(208, 201, 192);
+        text-shadow: 5px 5px 5px rgb(95, 113, 97);
+       }
+
+       .daneosobowe1 {
+        color:rgb(208, 201, 192);
+       }
+
+       .umiejetnosci1 {
+        color:rgb(208, 201, 192);
+       }
+
+       .obowiazki1 {
+        color:rgb(35, 39, 35);
+       }
+        
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <div id="lewo">
+            <h1>Imię  Nazwisko</h1>
+            <p id="stanowisko1">Stanowisko</p>
+            <img id="zdjecie" src="cvimg2 33.png">
+            <header>Dane osobowe</header>
+            <h3>Telefon</h3>
+            <p class="daneosobowe1">+48 000 000 000</p>
+            <h3>Email</h3>
+            <p class="daneosobowe1">imienazwisko@gmail.com</p>
+            <h3>Linkedin</h3>
+            <p class="daneosobowe1">linkedin.com/imienazwisko</p>
+            <header>Umiejętności</header>
+
+            <ul class="umiejetnosci1">
+                <li> 
+                    <p class="umiejetnosci2" >Umiejętność numer 1</p>
+            
+                    <img src="gwiazdki2 3.png" class="gwiazdki">
+
+                    <br>
+                </li>
+
+                <li>
+                    <p class="umiejetnosci2">Umiejętność numer 2</p>
+            
+                    <img src="gwiazdki3 3.png" class="gwiazdki">
+                    <br>
+                </li>
+
+                <li>
+                    <p class="umiejetnosci2">Umiejętność numer 3</p>
+          
+                    <img src="gwiazdki4 2.png" class="gwiazdki">
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="prawo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           
+            <table class="tabele"> 
+                <tr>
+                    <th colspan="2" class="doswiadczenie1">Doświadczenie</th>
+                </tr>
+                <tr>  
+                    <td class="tabdaty1">Data 1</td>
+                    <td class="tabzawartosc1">
+                       
+                        <p class="stanowisko2">Stanowisko</p>
+                        <p class="stanowisko2">Nazwa firmy</p>
+                        <p class="stanowisko2">Obowiązki</p>
+                        <ul class="obowiazki1">
+                            <li>Obowiązek numer 1</li>
+                            <li>Obowiązek numer 2</li>
+                            <li>Obowiązek numer 3</li>
+                            <li>Obowiązek numer 4</li>
+                            <li>Obowiązek numer 5</li>
+                        </ul>
+                        <p class="stanowisko2">Osiągnięcia</p>
+                        <ul class="obowiazki1">
+                            <li>Osiągnięcie numer 1</li>
+                            <li>Osiągnięcie numer 2</li>
+                            <li>Osiągnięcie numer 3</li>
+                            <li>Osiągnięcie numer 4</li>
+                            <li>Osiągnięcie numer 5</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <td class="tabdaty1">Data 2</td>
+                    <td class="tabzawartosc1">
+                        <p class="stanowisko2">Stanowisko</p>
+                        <p class="stanowisko2">Nazwa firmy</p>
+                        <p class="stanowisko2">Obowiązki</p>
+                        <ul class="obowiazki1">
+                            <li>Obowiązek numer 1</li>
+                            <li>Obowiązek numer 2</li>
+                            <li>Obowiązek numer 3</li>
+                            <li>Obowiązek numer 4</li>
+                            <li>Obowiązek numer 5</li>
+                        </ul>
+                        <p class="stanowisko2">Osiągnięcia</p>
+                        <ul class="obowiazki1">
+                            <li>Osiągnięcie numer 1</li>
+                            <li>Osiągnięcie numer 2</li>
+                            <li>Osiągnięcie numer 3</li>
+                            <li>Osiągnięcie numer 4</li>
+                            <li>Osiągnięcie numer 5</li>
+                        </ul>
+                        </td>
+                </tr>
+            </table>
+            <br>
+            <table class="tabele">
+                <tr>
+                    <th colspan="2" class="doswiadczenie1">Edukacja</th>
+                </tr>
+                <tr>
+                    <td class="tabdaty1">Data 3</td>
+                    <td class="tabszkola1">
+                        <ul class="obowiazki1">
+                            <li>Szkoła numer 1</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabdaty1">Data 4</td>
+                    <td class="tabszkola1">
+                        <ul class="obowiazki1">
+                            <li>Szkoła numer 2</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  
+  </body>
+</html>
