@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <style>
+
+        body{
+            margin:0;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .glowne{
+            width:100vw;
+            height:90vh;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .lewo{
+            width:20%;
+            height:90vh;
+        }
+
+        .l-opcje{
+            background: purple;
+
+            height: 45vh;
+            width:100%;
+
+            display: flex;
+            flex-direction: column;
+            align-content:space-between;
+        }
+
+        .lo-1{
+            background: yellow;
+            
+            width:90%;
+            height:50%;
+            
+            margin-bottom:0.25vw;
+            margin-top:0.5vw;
+
+            margin-left: 1vw;
+            margin-right: 1vw;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap:1vw;
+           
+            
+
+        }
+
+
+        .lo-opcje{
+            background: rgb(255, 0, 0);
+            display: flex;
+            height:3.5vh;
+            width:100%;
+            
+        }
+
+        .l-playlisty{
+            background: rgb(255, 0, 221);
+            height: 50%;
+            width:100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .lp-playlisty{
+            background: cyan;
+            width:95%;
+            height:3vh;
+            margin-top:1vh;
+        }
+
+        
+
+       
+
+        .prawo{
+            background: blue;
+            width:20%;
+            height:90vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #p-3{
+            width:7vw;
+            height:4vh;
+            align-self: end;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+
+        .p3-okienka{
+            background: white;
+            height:100%;
+            width:33.3%;
+        }
+
+        .p3-okienka:hover{
+            background: rgb(122, 122, 122);
+        }
+
+        .p-znajomi{
+            background: lawngreen;
+            width:100%;
+            height:3vh;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .pz-lewo{
+            background: rgb(255, 131, 131);
+            width:50%;
+            height:100%;
+            display: flex;
+        }
+
+        .pz-prawo{
+            background: rgb(255, 139, 255);
+            width:30%;
+            height:100%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .pzp-opcje{
+            background-color: black;
+            height: 100%;
+            width:45%;
+            display: flex;
+            flex-direction: row;
+        }
+     
+        .p-informacje{
+            width:90%;
+            height:40vh;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-top:0.5vh;
+        }
+
+        .pi-tekst1{
+            background: rgb(255, 242, 185);
+            width:100%;
+            height:6vh;
+        }
+
+        .pi-osoby{
+            background: rgb(97, 51, 97);
+            width:100%;
+            height:23vh;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+
+        .pi-tekst2{
+            background: orangered;
+            width:100%;
+            height:11vh;
+        }
+
+        .pio-pole{
+            background: navy;
+            width:100%;
+            height:33.3%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .pio-pole:hover{
+            background: rgb(0, 0, 66);
+        }
+
+        .piop-zdjecie{
+            background: pink;
+            width:30%;
+            height:100%;
+        }
+
+        .piop-zdjecie:hover{
+            background: rgb(134, 63, 75);
+        }
+
+        .piop-nazwa{
+            background: brown;
+            height: 90%;
+            width:70%;
+            align-self:center;
+        }
+
+        .piop-nazwa:hover{
+            background: rgb(48, 14, 14);
+        }
+
+        .p-ustawienia{
+            background: rgb(77, 0, 0);
+            width:8vw;
+            height:6.5vh;
+            display: flex;
+            align-self: center;
+            margin-top:1vh;
+        }
+
+        .srodek{
+            background: green;
+            width:60%;
+            height:90vh;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .s-glowne{
+            background: rgb(17, 88, 17);
+            height: 100%;
+            width:94%;
+            
+        }
+
+        .sg-menu{
+            width:100%;
+            height:5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sgm-lewo{
+            background: rgb(255, 120, 255);
+            height: 100%;
+            width:50%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sgml-przewijanie{
+            background: burlywood;
+            height: 80%;
+            width:6.5vw;
+            align-self: center;
+            margin-left:2vw;
+            
+        }
+
+        .sgm-prawo{
+            background: rgb(95, 14, 95);
+            height: 100%;
+            width:25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sgmp-przejdz{
+            background: black;
+            height: 80%;
+            width:4.5vw;
+            display: flex;
+            align-self: center;
+        }
+
+        .sgmp-uzytkownik{
+            background: rgb(255, 255, 255);
+            height: 80%;
+            width:6.5vw;
+            
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .sgmpu-zdjecie{
+            background: red;
+            height:90%;
+            width:30%;
+            align-self: center;
+        }
+
+        .sgmpu-nazwa{
+            background: rgb(0, 153, 94);
+            height:90%;
+            width:70%;
+            align-self: center;
+            
+        }
+
+        .sg-powitanie{
+            background: yellow;
+            width:100%;
+            height:8vh;
+        }
+
+        .sg-muzyka{
+            background: rgb(138, 0, 34);
+            width:100%;
+            height:30vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sgm-srodek{
+            background: rgb(214, 73, 96);
+            width:54vw;
+            height:25vh;
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .sgms-playlisty{
+            background: pink;
+            height:11.5vh;
+            width:17vw;
+            display: flex;
+            align-self: center;
+        }
+
+        .sg-skladanki{
+            background: blue;
+            width: 100%;
+            height:6vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sgs-powitanie{
+            background: yellowgreen;
+            width: 17vw;
+            height: 100%;
+        }
+
+        .sgs-wszystko{
+            background: orangered;
+            width:8vw;
+            height:100%;
+        }
+
+        .sg-skladanki2{
+            background: cyan;
+            width:100%;
+            height:29vh;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sgs2-playlisty{
+            background: orange;
+            height: 100%;
+            width:12vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sgs2p-obraz{
+            background: fuchsia;
+            width:85%;
+            height:60%;
+            display: flex;
+            margin-top:1vh;
+      
+        }
+
+        .sgs2p-nazwa{
+            background-color: brown;
+            width:85%;
+            height:30%;
+            display: flex;
+            margin-bottom:1vh;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .sgs2pn-tytul{
+            background: grey;
+            width:100%;
+            height:40%;
+        }
+
+        .sgs2pn-opis{
+            background: rgb(228, 185, 185);
+            width:100%;
+            height:60%;
+        }
+
+        .dol{
+            background: orange;
+            height:10vh;
+            width:100vw;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+    
+
+        .d-srodek{
+            background: white;
+            height: 100%;
+            width:60%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ds-opcje{
+            background: rgb(68, 68, 0);
+            height: 50%;
+            width:20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .dso-rodzaje{
+            background: pink;
+            height: 90%;
+            width:19%;
+            align-self: center;
+        }
+
+        .ds-suwak{
+            background: peru;
+            height: 50%;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .dss-minuta{
+            background: yellow;
+            width:2vh;
+            height: 2vh;
+            align-self: center;
+        }
+
+        .dss-licznik{
+            background: black;
+            height: 0.5vh;
+            width:25vw;
+            align-self: center;
+        }
+       
+        .d-bok{
+            background: red;
+            height:100%;
+            width:25%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content:end;
+        }
+
+        .db-x{
+            background: rgb(0, 0, 0);
+            height: 100%;
+            width:40%;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+        .db-opcje{
+            background: green;
+            width:1.5vw;
+            height:3vh;
+            align-self:center;
+        }
+
+        .db-suwak{
+            background-color: cyan;
+            height: 0.5vh;
+            width:3.5vw;
+            align-self:center;
+            margin-right:0.5vw;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="container">
+
+        <div class="glowne">
+
+            <div class="lewo">
+
+                <div class="l-opcje">
+
+                    <div class="lo-1">
+
+                        <div class="lo-opcje"></div>
+                        <div class="lo-opcje"></div>
+                        <div class="lo-opcje"></div>
+                        <div class="lo-opcje"></div>
+
+                    </div>
+
+                    <div class="lo-1">
+                        
+                        <div class="lo-opcje"></div>
+                        <div class="lo-opcje"></div>
+                        <div class="lo-opcje"></div>
+                        <div class="lo-opcje"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="l-playlisty">
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                    <div class="lp-playlisty"></div>
+                </div>
+
+            </div>
+
+            <div class="srodek">
+
+                <div class="s-glowne">
+
+                    <div class="sg-menu">
+
+                        <div class="sgm-lewo">
+
+                            <div class="sgml-przewijanie"></div>
+
+                        </div>
+
+                        <div class="sgm-prawo">
+
+                            <div class="sgmp-przejdz"></div>
+                            <div class="sgmp-uzytkownik">
+
+                                <div class="sgmpu-zdjecie"></div>
+                                <div class="sgmpu-nazwa"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sg-powitanie"></div>
+
+                    <div class="sg-muzyka">
+
+                        <div class="sgm-srodek">
+
+                            <div class="sgms-playlisty"></div>
+                            <div class="sgms-playlisty"></div>
+                            <div class="sgms-playlisty"></div>
+                            <div class="sgms-playlisty"></div>
+                            <div class="sgms-playlisty"></div>
+                            <div class="sgms-playlisty"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sg-skladanki">
+
+                        <div class="sgs-powitanie"></div>
+                        <div class="sgs-wszystko"></div>
+
+                    </div>
+
+                    <div class="sg-skladanki2">
+
+                        <div class="sgs2-playlisty">
+
+                            <div class="sgs2p-obraz"></div>
+                            <div class="sgs2p-nazwa">
+
+                                <div class="sgs2pn-tytul"></div>
+                                <div class="sgs2pn-opis"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="sgs2-playlisty">
+
+                            <div class="sgs2p-obraz"></div>
+                            <div class="sgs2p-nazwa">
+
+                                <div class="sgs2pn-tytul"></div>
+                                <div class="sgs2pn-opis"></div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sgs2-playlisty">
+
+                            <div class="sgs2p-obraz"></div>
+                            <div class="sgs2p-nazwa">
+
+                                <div class="sgs2pn-tytul"></div>
+                                <div class="sgs2pn-opis"></div>
+                            </div>
+
+                        </div> 
+                        
+                        <div class="sgs2-playlisty">
+
+                            <div class="sgs2p-obraz"></div>
+                            <div class="sgs2p-nazwa">
+
+                                <div class="sgs2pn-tytul"></div>
+                                <div class="sgs2pn-opis"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sg-skladanki">
+
+                        <div style="clear:both"></div>
+                        <div class="sgs-wszystko"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="prawo">
+
+                <div id="p-3">
+                    
+                    <div class="p3-okienka"></div>
+                    <div class="p3-okienka"></div>
+                    <div class="p3-okienka"></div>
+
+                </div>
+
+                <div class="p-znajomi">
+
+                    <div class="pz-lewo"></div>
+                    <div class="pz-prawo">
+
+                        <div class="pzp-opcje"></div>
+                        <div class="pzp-opcje"></div>
+
+                    </div>
+                </div>
+
+                <div class="p-informacje">
+
+                    <div class="pi-tekst1"></div>
+
+                    <div class="pi-osoby">
+
+                        <div class="pio-pole">
+
+                            <div class="piop-zdjecie"></div>
+                            <div class="piop-nazwa"></div>
+
+                        </div> 
+
+                        <div class="pio-pole">
+
+                            <div class="piop-zdjecie"></div>
+                            <div class="piop-nazwa"></div>
+                            
+                        </div> 
+
+                        <div class="pio-pole">
+
+                            <div class="piop-zdjecie"></div>
+                            <div class="piop-nazwa"></div>
+                            
+                        </div> 
+                        
+                    </div>
+
+                    <div class="pi-tekst2"></div>
+
+                </div>
+
+                <div class="p-ustawienia"></div>
+
+            </div>
+
+        </div>
+
+        <div class="dol">
+
+            <div class="d-bok"></div>
+
+            <div class="d-srodek">
+
+                <div class="ds-opcje">
+
+                    <div class="dso-rodzaje"></div>
+                    <div class="dso-rodzaje"></div>
+                    <div class="dso-rodzaje"></div>
+                    <div class="dso-rodzaje"></div>
+                    <div class="dso-rodzaje"></div>
+
+                </div>
+
+                <div class="ds-suwak">
+
+                    <div class="dss-minuta"></div>
+                    <div class="dss-licznik"></div>
+                    <div class="dss-minuta"></div>
+                </div>
+
+            </div>
+
+            <div class="d-bok">
+
+                <div class="db-x">
+
+                    <div class="db-opcje"></div>
+                    <div class="db-opcje"></div>
+                    <div class="db-opcje"></div>
+
+                    <div class="db-suwak"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+   </div>
+
+
+    
+
+   
+</body>
+</html>
