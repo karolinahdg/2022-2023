@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKloud</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+  
+
+    <style>
+        
+
+
+        body{
+            font-family: arial;
+            margin: auto;
+            color:rgb(31, 31, 31);
+            background: rgb(243, 243, 243);
+         
+        }
+        
+
+        #akloud{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: sticky;
+
+            background-color: rgb(233, 233, 233);
+            height:35px;
+            align-items: center;
+            padding-left:10px;
+            padding-right:10px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+        }
+
+        
+
+        #nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            width:70vw;
+            height:3vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:10px;
+            margin-bottom:40px;
+            border-bottom: solid rgb(219, 219, 219) 1px;
+            line-height: 50px;
+            
+        }
+
+       
+
+        .opcje:hover{
+            border-bottom: solid rgb(194, 194, 194) 1px;
+        }
+
+        #tpa{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            margin-left: auto;
+            margin-right: auto;
+            width:70vw;
+        }
+
+        #glowne{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            width:70vw;
+            height: 26.75vw;
+            
+        }
+
+        #lewo{
+            width:25vw;
+            border-right: solid 1px rgb(224, 224, 224);
+            padding-right:185px;
+        }
+
+        h1{
+            font-size: 50px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        h3{
+           font-size: 27px;
+            margin-bottom: 0;
+        }
+        #cena{
+            display: flex;
+           color:grey;
+            margin-top: 0;
+        }
+
+        #z{
+            color:grey;
+        }
+
+        .lista{
+        list-style-type: none;
+      }
+
+      .lista li:before{
+        content:"• ";
+        color:rgb(29, 147, 243);
+        font-weight: bolder;
+        padding-right: 1vw;
+      }
+
+      .js{
+        color:rgb(177, 177, 177);
+        font-weight: lighter;
+      }
+
+      .lista >li {
+            line-height: 22px;
+        }
+
+        a {
+            color:rgb(29, 147, 243);
+            text-decoration: none;
+        }
+
+        #ll1{
+            color:grey;
+            font-size: 14px;
+            padding-left:2.5vw;
+        }
+
+
+
+
+        #prawo{
+            width:25vw;
+            padding-left:5vw;
+        }
+
+        #p1{
+            background-color:rgb(233, 233, 233);
+            border-radius: 20px;
+            padding:10px;
+            padding-left:20px;
+            padding-top:5px;
+            margin:0px;
+        }
+
+        #jzpAK{
+            font-size: 17px;
+            margin-bottom:0;
+        }
+        
+        #jzpAK2{
+            margin-top:0.5vw;
+            color:grey;
+            font-size: 13px;
+           
+        }
+
+        #jzpAKl{
+            font-size: 15px;;
+        }
+
+        #p2{
+            background: rgb(233, 233, 233);
+            border-radius: 20px;
+            padding:5px;
+            padding-left:10px;
+            padding-top:2.5px;
+            margin:0px;
+            margin-top:7px;
+            font-size:16px;
+        }
+
+
+      
+
+
+        #footer1{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            margin-left: auto;
+            margin-right: auto;
+
+           
+            font-size:15px;
+            width:70vw;
+        }
+
+        #footer1 #f1{
+            margin-bottom:1vw;
+        }
+
+        #sp1{
+            color:grey;
+        }
+
+        #footer2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            height: 3vw;
+            background: rgb(233, 233, 233);
+        }
+
+        #f2lewo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            width:34vw;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 13px;
+            align-items: end;
+       
+        }
+
+        #f2lewo p{
+            border-left: solid 1px rgb(201, 201, 201);
+            padding-left:3vw;
+            text-align: center;
+        }
+
+        #f2lewo p:first-child{
+            border:none;
+        }
+
+
+
+        #f2prawo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+           
+            width:30vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #f2prawo #c{
+            color:grey;
+            font-size: 12px;;
+        }
+
+    
+    
+       
+    </style>
+  </head>
+  <body>
+
+    <div id="akloud">
+        <div id="akloud1">AKloud</div>
+        <div id="ikonki">X X X</div>
+    </div>
+   
+    <div id="container">
+
+        <div id="nav">
+            <div class="opcje">Twój pakiet AKloud</div>
+            <div class="opcje">Twoje miejsce w AKloud</div>
+            <div class="opcje">Funkcje AKloud+</div>
+            <div class="opcje">Odzyskiwanie danych</div>
+            <div class="opcje">Ustawienia</div>
+        </div>
+
+        <br>
+
+        <div id="tpa">
+            <h1>Twój pakiet AKloud</h1>
+            
+            
+            <h3>AKloud+ z 50 GB miejsca</h3>
+            <p id="cena">3,99 PLN/miesiąc</p>
+        </div>
+
+        <div id="glowne">
+
+            <div id="lewo">
+                <p id="z">Zawiera</p>
+                <ul class="lista">
+                    <li>50 GB miejsca</li>
+                </ul>
+                <p class="js">Premium</p>
+                <ul class="lista">
+                    <li>Przekazywanie prywatne</li>
+                    <li>Ukryj mój adres email</li>
+                    <li>Niestandardowa domena email</li>
+                    <li>Obsługa jednej kamery w ramach Prywatnego monitoringu w HomeKit</li>
+                    <li>Chmura rodzinna</li>
+                </ul>
+                <p class="js">Aplikacje i funkcje</p>
+                <ul class="lista">
+                    <li>Zdjęcia w AKloud</li>
+                    <li>AKloud Drive</li>
+                    <li>Backup w AKloud</li>
+                    <li>Poczta w AKloud</li>
+                    <li>Hasła i pęk kluczy w AKloud</li>
+                </ul>
+                <p id="ll1">Zobacz wszystko <a href="#" id=ll2>aplikacjach i funkcjach korzystajacych z AKloud #</a></p>
+            </div>
+
+            <div id="prawo">
+
+                <div id="p1">
+                    <p id="jzpAK">Jak zmienić pakiet AKloud</p>
+                    <p id="jzpAK2">Użyj opcji Kontynuuj na urządzeniu aby wysłac na swoje urządzenia Apple powiadomienie, które przeniesie Cię bezpośrednio do ustawień pakietu AKloud</p>
+                    <a href="x" id="jzpAKl">X Kontynuuj na urządzeniu...</a>
+                </div>
+
+                <div id="p2">
+                    <p id="wpAK1">Wyświetl <a href="x" id=apAKl>Pakiety AKloud+ #</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    
+        <div id="lprzedfooter">
+
+
+        <div id="footer1">
+                <p id="f1">AKloud <span id="sp1">></span> Twój pakiet AKloud</p>
+        </div>
+
+        <div id="footer2">
+
+            <div id="f2lewo">
+                <p class="f2lewop">Stan systemu</p>
+                <p class="f2lewop">Polityka prywatności</p>
+                <p class="f2lewop">Warunki i zasady</p>
+            </div>
+
+            <div id="f2prawo">
+                <p id="c">Copyright @ 2022 ZSKocjan. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
