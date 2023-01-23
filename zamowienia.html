@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zamowienia</title>
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: helvetica;
+            width:100vw;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #E3E3E3;
+            color:rgb(224, 224, 224);
+        }
+
+        a{
+            color:rgb(224, 224, 224);
+        }
+
+        table{
+            color:#2d2c42;
+            border-collapse:collapse; 
+        }
+
+        nav{
+            display: flex;
+            width:100vw;
+            height:6vh;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+        }
+
+        .logo{
+            background-color: #2d2c42;
+            width:10vw;
+            height: 100%;
+            font-size: 3rem;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            background-color: #2d2c42;
+            width:90vw;
+            text-align: center;
+            align-items: center;
+            position: static;
+            height: 100%;
+
+            font-size: 1.3rem;
+        }
+
+        .dropdown {
+            width:30vw;
+            position: relative;
+        }
+
+        .menu .dropdown a{
+            text-decoration: none;
+            background-color: #2d2c42;
+            display: block;
+        }
+
+        .dropdown ul li a {
+            background-color: #2d2c42;
+            display: block;
+            
+        }
+
+        .dropdown a::before{
+            content: none;
+        }
+
+        .dropdown ul:hover{
+            background-color: #6f00ffad;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .menu ul{
+            position: absolute;
+            display: none;
+            width:10vw;
+           font-size: 1.2rem;
+           border-radius: 10px;
+           background-color: #37364e;
+           margin-top:0.5rem;
+           box-shadow: rgba(0, 0, 0, 0.493) 0px 7px 20px ;
+           
+        }
+
+        .menu input{
+            font-size: 1.1rem;
+        }
+        .menu ul li{
+            list-style-type: none;
+            text-align: left;
+            padding-left:0.5vh;
+            height: 3vh;
+        }
+
+        .menu a:focus + ul{
+            display: block;
+            position: absolute;
+        }
+
+        .powiadomienie{
+            text-align: center;
+            background: #2d2c42;
+            font-size: 2rem;
+            height:7vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:60%;
+            margin-left:auto ;
+            margin-right:auto ;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.493) 0px 7px 20px ;
+            color:rgb(230, 230, 230);
+        }
+
+        table{
+            
+            width:70vw;
+            height:50vh;
+            
+            margin-left:auto;
+            margin-right:auto;
+           
+            border:black solid 1px;
+        }
+
+        td{
+            border:black solid 1px;
+            width:15rem;
+        }
+
+        th{
+            border:black solid 1px;
+            width:15rem;
+        }
+
+
+        .zmiana-strony{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+
+        .proba{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            width:3vw;
+            color:white;
+        }
+
+        .proba a {
+            color:rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        .nazwa{
+            background-color: #2d2c42;
+            width:100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+<nav>
+    <div class="logo">LOGO</div>
+
+    <div class="menu">
+
+        <div class="dropdown">
+           <a href="#">Zamowienia</a>
+            <ul>
+                <li>biezace</li>
+                <li>archiwalne</li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Wysylki</a>
+            <ul>
+                <li>biezace</li>
+                <li>archiwalne</li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Magazyn</a>
+            <ul>
+                <li>paczki</li>
+                <li>listy</li>
+            </ul>
+        </div>
+
+        <div class="dropdown"><input type="text" name="wyszukiwarka" placeholder="Wyszukaj..."></div>
+
+        <div class="dropdown">
+            <a href="#">Uzytkownik</a>
+            <ul>
+                <li>wiadomosci</li>
+                <li>powiadomienia</li>
+                <li>opcje</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="powiadomienie">MASZ NOWE ZAMOWIENIE</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>numer zamowienia</th>
+            <th>klient</th>
+            <th>data zamowienia</th>
+            <th>data wyslania</th>
+            <th>status</th>
+            <th>opcje</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jan Kowlalski</td>
+            <td>12-01-2020</td>
+            <td>24-01-2020</td>
+            <td>dostarczone</td>
+            <td>
+                <select>
+                    <option value="opcja1">anuluj zamowienie</option>
+                    <option value="opcja2">potwierdz zamowienie</option>
+
+                </select>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+<div class="zmiana-strony">
+    
+    <div class="proba">
+        <a href="#"><div class="zs">1</div></a>
+        <a href="#"><div class="zs">2</div></a>
+        <a href="#"><div class="zs">3</div></a>
+
+    </div>
+    
+    
+</div>
+</body>
+</html>
