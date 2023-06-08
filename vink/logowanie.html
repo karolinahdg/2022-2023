@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <title>ViNK.com</title>
+
+    <style>
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            background-image: linear-gradient(to right top, #003451, #1e253d, #201927, #170e15, #000000);
+        }
+
+        *{
+            font-family: lato;
+        }
+
+        nav{
+            width:100vw;
+            height: 9vh;
+            text-align: center;
+            
+        }
+
+        .logo{
+            font-size: 5rem;
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            line-height: 7vh;
+            padding-top:2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 26, 255);
+        }
+
+
+       
+
+        .container{
+            background-image: radial-gradient(circle, rgba(0, 162, 255, 0.096) 0%, rgba(0, 0, 0, 0) 41%);
+            width: 40vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:8vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+
+        .forms{
+            
+            width: 40vw;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 4rem;
+            margin:0;
+            margin-bottom:2vh;
+            font-weight: 300;
+            transition: 0.5s;
+        }
+
+        h1:hover{
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+        }
+
+        .form-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 40vw;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sign-up-now{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .form-1 input{
+            width: 14.5vw;
+            height: 5vh;
+            margin-bottom:1vh;
+        }
+
+        .button-log-in{
+         
+            width: 14.5vw;
+            height: 5vh;
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 2vh;
+            margin-bottom:0.5vh;
+
+            background: rgba(0, 0, 0, 0.452);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        .button-log-in:hover{
+            width: 15.4vw;
+            height: 6vh;
+            background: #003451;
+            font-size: 1.5rem;
+        }
+
+        .under-button{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 14.5vw;
+            text-align: center;
+            height: 3vh;
+
+            margin-left: auto;
+            margin-right: auto;
+       
+
+            font-weight: 300;
+        }
+
+        .info-s{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25vw;
+            font-size: 1rem;
+            font-weight: 300;
+
+        }
+
+        .small-info{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        a{
+        text-decoration: none;
+        color:#00a2ff;
+       }
+
+
+
+
+        .form-1 input{
+            border-radius: 10px;
+        background: rgba(255, 255, 255, 0.925);
+        border: none;
+        }
+
+        
+        .form-1 input::placeholder{
+            padding-left:1vw;
+            font-size: 1rem;
+        }
+
+        .s-u-n{
+            margin-left:0.3vw;
+        }
+
+       
+
+
+
+
+
+
+
+
+
+
+        .footer{
+        width: 100vw;
+        height: 24vh;
+        margin-top:15.95vh;
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        margin-top:1vh;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       @media only screen and (max-width: 1024px) {
+        .container{
+            width: 60vw;
+        }
+
+        .under-button{
+            width: 35vw;
+        }
+
+        .form-1{
+            width: 35vw;
+        }
+
+        .form-1 input{
+            width: 35vw;
+        }
+
+        .button-log-in{
+            width: 35vw;
+        }
+
+        #language{
+            width: 15vw;
+        }
+       }
+
+       @media only screen and (max-width: 768px) {
+        .info{
+            width: 70vw;
+        }
+       }
+
+       @media only screen and (max-width: 425px) {
+
+        .container{
+            width: 80vw;
+        }
+        .form-1{
+            width: 60vw;
+        }
+
+        .form-1 input{
+            width: 60vw;
+        }
+
+        .button-log-in{
+            width: 60vw;
+        }
+
+        .forms{
+            width: 80vw;
+        }
+
+        .under-button{
+            width: 60vw;
+        }
+
+        .sign-up-now{
+            width: 60vw;
+        }
+
+        .small-info{
+            width: 60vw;
+        }
+
+        #language{
+            width: 35vw;
+        }
+       }
+
+       @media only screen and (max-width: 320px) {
+        .form-1{
+            width: 80vw;
+        }
+
+        .form-1 input{
+            width: 80vw;
+        }
+
+        .button-log-in{
+            width: 80vw;
+        }
+
+        .forms{
+            width: 90vw;
+        }
+
+        .under-button{
+            width: 80vw;
+        }
+
+        .small-info{
+            width: 80vw;
+        }
+       }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="strona-wejsciowa-rejestracja.html"><span class="logo">ViNK</span></a>
+    </nav>
+
+
+
+
+    <div class="container">
+
+        <div class="forms">
+            <h1>Log In</h1>
+            <form action="vink.php" method="POST" class="form-1">
+                <input type="email" name="email" id="i-email" placeholder="Email">
+                <input type="password" name="password" id="i-password" placeholder="Password">
+            </form>
+
+            <div class="button-l-i">
+                <a href="strona-glowna.html"><div class="button-log-in">LOG IN</div></a>
+            </div>
+
+            <div class="under-button">
+
+                <form action="vink.php" method="POST" class="form-2">
+                    <label for="remember-me" id="r-me">
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                        Remember me
+                    </label>
+                </form>
+
+                <a href="logowanie-brak-hasla.html">Need help?</a>
+            </div>
+        </div>
+
+        <div class="info-s">
+            <p class="sign-up-now">New to ViNK? <a href="rejestracja.html" class="s-u-n"> Sign up Now.</a></p>
+            <p class="small-info">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="n.html">Learn more</a>.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+
+        <select name="language" id="language">
+            <option value="English"  class="lang-option">English</option>
+            <option value="Polish"  class="lang-option">Polish</option>
+            <option value="Deutsch"  class="lang-option">Deutsch</option>
+            <option value="Spanish" class="lang-option">Spanish</option>
+        </select>
+
+        <p class="footer-phone-number">Questions? Call 2544 8569 95 95</p>
+
+        <ol class="info">
+            <li><a href="n.html">Privacy Policy</a></li>
+            <li><a href="n.html">Manage Preferences</a></li>
+            <li><a href="n.html">Terms of Use</a></li>
+            <li><a href="n.html">Corporate Informations</a></li>
+        </ol>
+
+        <p class="footer-2023">©2023 ViNK. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

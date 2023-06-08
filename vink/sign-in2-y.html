@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <title>ViNK.com</title>
+
+    <style>
+   body{
+            margin:0;
+            padding:0;
+            background-image: linear-gradient(to right top, #003451, #1e253d, #201927, #170e15, #000000);
+        }
+
+        *{
+            font-family: lato;
+        }
+
+        nav{
+            width:100vw;
+            height: 9vh;
+            
+            text-align: center;
+        }
+
+        .logo{
+            font-size: 5rem;
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            line-height: 7vh;
+            padding-top:2vh;
+            padding-bottom:2vh;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+      
+
+        .info-time{
+            width: 40vw;
+            height: 6vh;
+            display: flex;
+            justify-content: space-between;
+            padding-left:1.5vw;
+            padding-right:1.5vw;
+            color:rgba(255, 255, 255, 0.904);
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.308);
+            margin-left:auto;
+            margin-right:auto;
+
+            margin-top:2vh;
+        }
+
+        .container{
+            width:40vw;
+
+            margin-left:auto;
+            margin-right:auto;
+            background-image: radial-gradient(circle, rgba(0, 183, 255, 0.11) 0%, rgba(0, 0, 0, 0) 57%);
+            padding:1.5%;
+            margin-top:2vh;
+
+            margin-bottom:20vh;
+
+            padding-top:0;
+            padding-bottom:0.5vh;
+
+        }
+
+        .form-2{
+            color:white;
+            font-size: 1rem;
+            font-weight: 30;
+            margin-left:2vw;
+            margin-right:2vw;
+        }
+
+        .text{
+          
+            color:rgb(255, 255, 255);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .amount-of-steps{
+            line-height: 3vh;
+
+            margin:0;
+            padding:0;
+
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        h1{
+            
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin:0;
+            padding:0;
+            text-align: center;
+            margin-top:0.5vh;
+            transition: 0.5s;
+        }
+
+        h1:hover{
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+
+        }
+
+        .info-p{
+            
+            font-size: 1rem;
+            font-weight: 300;
+            margin:0;
+            padding:2%;
+
+            text-align: center;
+        }
+
+
+        .form-1{
+            width:40vw;
+            margin:0;
+            padding:0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+
+      
+
+        .names{
+            display: flex;
+            width:30.3vw;
+            justify-content: space-between;
+            margin-bottom:1.5vh
+        }
+
+        .names input {
+            width: 14.5vw;
+            height: 5vh;
+        }
+
+        input.email, input#password{
+            width: 30vw;
+            height: 5vh;
+            margin-bottom:1.5vh;
+        }
+
+      input::placeholder{
+        padding-left:1vw;
+        font-size: 1rem;
+      }
+
+      .pass-info{
+        margin:0;
+        padding:0;
+        margin-bottom:4vh;
+        font-size: 0.9rem;
+        text-align: left;
+        font-weight: 300;
+        color:rgb(255, 255, 255);
+      }
+
+      .prom{
+        font-size: 1rem;
+      }
+
+      .create-a{
+        border-radius: 10px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.308) 62%);
+        margin-top:3vh;
+        height: 16vh;
+        color:white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+   
+      }
+
+      .c-a-info{
+        font-size: 0.9rem;
+        font-weight: 300;
+
+        padding-left:1vw;
+        padding-right:1vw;
+        padding:3%;
+      }
+
+      .create-account{
+        width:15vw;
+        height: 6vh;
+        background: rgba(0, 0, 0, 0.452);
+        color:rgb(255, 255, 255);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom:1vh;
+        transition: 0.5s;
+      }
+
+      .create-account:hover{
+        width: 16vw;
+        height: 7vh;
+        background: #00a2ff88;
+ font-size: 1.5rem;
+      }
+
+      .know-more-p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        color:rgba(255, 255, 255, 0.74);
+      }
+
+
+
+
+
+
+
+
+
+
+
+      .footer{
+        width: 100vw;
+        height: 24vh;
+        
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        margin-top:1vh;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       a{
+        text-decoration: none;
+        color:#00a2ff;
+       }
+
+
+
+
+      
+ .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 26, 255);
+        }
+
+
+     
+    
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        input{
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.925);
+            border:none
+        }
+
+
+
+
+      @media only screen and (max-width: 1440px) {
+            .container{
+                width: 60vw;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .create-account{
+                width: 20vw;
+            }
+
+            .info-p{
+                padding:3%;
+            }
+
+            #language{
+                width: 12vw;
+            }
+
+            .info-time{
+                width: 60vw;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container{
+                width: 80vw;
+            }
+
+            .info-time{
+                width: 80vw;
+            }
+
+            input.email, input#password{
+            width: 40vw;
+            }
+
+            .names {
+                width: 40vw;
+            }
+
+            .names input{
+                width: 19vw;
+            }
+
+            .create-account{
+                width: 30vw;
+            }
+
+            .info{
+                width: 70vw;
+            }
+
+            #language{
+                width: 20vw;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .container{
+                background: none;
+                width: 80vw;
+            }
+
+            input.email, input#password{
+            width: 70vw;
+            }
+
+            .names {
+                width: 70vw;
+            }
+
+            .names input{
+                width: 33vw;
+            }
+
+            .pass-info{
+                width: 70vw;
+            }
+
+            .create-account{
+                width: 60vw;
+                margin-bottom:1vh;
+            }
+
+            .create-a{
+                height: 17vh;
+            }
+
+            #language{
+                width: 30vw;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+            .create-a{
+                height: 20vh;
+            }
+
+            #language{
+                width: 35vw;
+            }
+        }
+
+
+
+      .footer{
+        width: 100vw;
+        height: 24vh;
+        
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        margin-top:1vh;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       a{
+        text-decoration: none;
+        color:#00a2ff;
+       }
+
+
+
+
+      
+
+
+    
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  input{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.925);
+    border:none
+  }
+
+
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="strona-wejsciowa-rejestracja.html"><span class="logo">ViNK</span></a>
+    </nav>
+
+    <div class="info-time">
+        <p class="yearly">Yearly</p>
+        <p class="price">230 zł/year
+            <a href="rejestracja.html">X</a>
+        </p>
+    </div>
+    
+    <div class="container">
+
+        <div class="text">
+            <p class="amount-of-steps">Step 2 of 3</p>
+            <h1>Create Your Account</h1>
+            <p class="info">You are one step closer to enjoying the best entertainment that ViNK has to offer</p>
+        </div>
+
+        <div class="forms">
+            <form action="vink.php" method="POST" class="form-1">
+
+                <div class="names">
+                    <input type="text" placeholder="First Name" name="first-name" required>
+                    <input type="text" placeholder="Last Name" name="last-name" required>
+                </div>
+
+                <input type="email" name="email" class="email" placeholder="Email Address" required>
+                <input type="email" name="c-email" class="email" placeholder="Confirm Email Address" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+
+                <p class="pass-info">Your password must be at least 8 characters and include a number or special character.</p>
+            </form>
+
+            <form action="vink.php" method="POST" class="form-2">
+
+                <input type="checkbox" name="promotions" id="promotions">
+                <label for="promotions" class="prom">Use my email address to send marketing promotions and offers from HBO Max (a WarnerMedia company) and Affiliates via email, social media, and other channels</label>
+
+            </form>
+
+        </div>
+
+        <div class="create-a">
+            <div class="c-a-info">By clicking Create Account, you confirm that you are 18 or over, you agree to the <a href="n.html">Terms of Use</a>, and you acknowledge that you have read our <a href="n.html">Privacy Policy</a>.</div>
+            <a href="sign-in3.html"><div class="create-account">CREATE ACCOUNT</div></a>
+        </div>
+
+        <div class="know-more">
+            <p class="know-more-p">To withdraw your consent (including any consent you have previously given) and to learn more about your rights and how to exercise them, see the <a href="n.html">Privacy Policy</a>.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <select name="language" id="language">
+            <option value="English"  class="lang-option">English</option>
+            <option value="Polish"  class="lang-option">Polish</option>
+            <option value="Deutsch"  class="lang-option">Deutsch</option>
+            <option value="Spanish" class="lang-option">Spanish</option>
+        </select>
+
+        <p class="footer-phone-number">Questions? Call 2544 8569 95 95</p>
+
+        <ol class="info">
+            <li><a href="n.html">Privacy Policy</a></li>
+            <li><a href="n.html">Manage Preferences</a></li>
+            <li><a href="n.html">Terms of Use</a></li>
+            <li><a href="n.html">Corporate Informations</a></li>
+        </ol>
+
+        <p class="footer-2023">©2023 ViNK. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

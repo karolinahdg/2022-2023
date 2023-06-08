@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <title>ViNK.com</title>
+
+    <style>
+
+        
+     
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+        .amount-of-steps:hover, h1:hover, .ch-info:hover,.agree-subs-p:hover{
+            
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+
+        }
+  
+        body{
+            margin:0;
+            padding:0;
+            background-image: linear-gradient(to right top, #003451, #1e253d, #201927, #170e15, #000000);
+        }
+
+        *{
+            font-family: lato;
+        }
+
+
+
+        nav{
+            width:100vw;
+            height: 9vh;
+     
+            text-align: center;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo{
+            font-size: 5rem;
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            line-height: 7vh;
+            padding-top:2vh;
+            padding-bottom:1vh;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+
+        .container{
+            width:40vw;
+          
+            margin:0;
+            padding:0;
+            background-image: radial-gradient(circle, rgba(0, 183, 255, 0.11) 0%, rgba(0, 0, 0, 0) 57%);
+            margin-left: auto;
+            margin-right: auto;
+
+            color:white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top:3vh;
+            text-align: center;
+        }
+
+        .amount-of-steps{
+            margin:0;
+            padding:0;
+            font-weight: 300;
+            font-size: 1.2rem;
+            transition: 0.5s;
+        }
+
+        h1{
+            margin:0;
+            padding:0;
+            font-weight: 300;
+            font-size: 3.5rem;
+            transition: 0.5s;
+        }
+
+        .ch-info{
+            margin:0;
+            padding:0;
+            font-weight: 300;
+            font-size: 1rem;
+            margin-bottom:2vh;
+            transition: 0.5s;
+        }
+
+        .form-1{
+            background: rgba(255, 0, 0, 0);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input::placeholder{
+        padding-left:1vw;
+        font-size: 1rem;
+      }
+
+        .form-1 input{
+            width: 21.5vw;
+            height: 5vh;
+            margin-bottom:1vh;
+
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.925);
+            border: none;
+        }
+
+       
+
+        .names{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 22vw;
+        }
+
+        .names input{
+            width: 10.3vw;
+        }
+
+        #e-d{
+            display: flex;
+            flex-direction: column;
+            height: 9vh;
+            font-weight: 300;
+            font-size: 1.2rem;
+            color:rgb(255, 255, 255);
+           
+        }
+
+        #e-d input{
+            margin-top:0.5vh;
+        }
+
+        .promo-code{
+            position: relative;
+            display: inline-block;
+            padding:0;
+            margin:0;
+            height: 8vh;
+            color:white;
+            font-size: 1.3rem;
+            font-weight: 300;
+        
+        }
+
+        .promo-code-input{
+            display:none;
+            position: absolute;
+            padding:0;
+            margin:0;
+
+            width: 5vw;
+            
+        }
+
+        .promo-code-input input{
+            width: 12.2vw;
+            height:4vh;
+            margin-top:1vh;
+        }
+
+        .promo-code:hover .promo-code-input{
+            display:block;
+            padding:0;
+            margin:0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cards{
+            margin-bottom:1vh;
+        }
+
+        a{
+            color:#00a2ff;
+            text-decoration: none;
+        }
+
+        .subscribtion-info{
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-left:2vw;
+            margin-right:2vw;
+            text-align: left;
+        }
+
+        .form-2{
+            display: flex;
+            padding:0;
+            margin:0;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .form-2 input{
+            width: 10vw;
+            height: 4vh;
+        }
+
+        #a-s{
+            width: 5vw;
+            height: 5vh;
+  
+        }
+
+        .agree-subs-p{
+            padding-left:2vw;
+            padding-right:2vw;
+            text-align: left;
+            transition: 0.5s;
+        }
+
+        .button-s-s{
+            background: rgba(0, 0, 0, 0.452);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            width:15vw;
+            height: 6vh;
+            margin-left: auto;
+            margin-right: auto;
+
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-s-s:hover{
+            width: 16vw;
+            height: 7vh;
+            background: #00a2ff50;
+        }
+
+        #expiration-date{
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.925);
+            border: none;
+        }
+
+        #input-promo-code{
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.925);
+            border: none;
+        }
+
+        .know-more-p{
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+
+
+
+
+
+
+        
+        .footer{
+        width: 100vw;
+        height: 24vh;
+        margin-top:10vh;
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        margin-top:1vh;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 26, 255);
+        }
+
+       .sign-out{
+            color:rgb(255, 255, 255);
+            font-size: 1.4rem;
+            font-weight: 300;
+            border-radius: 10px;
+            width: 6vw;
+            height: 4vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .sign-out:hover{
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+            background: rgba(255, 255, 255, 0.164);
+        }
+
+
+    
+
+
+        
+
+
+        @media only screen and (max-width: 1440px) {
+
+            #input-promo-code{
+                width: 16.5vw;
+            }
+        }
+
+
+
+
+        @media only screen and (max-width: 1024px) {
+
+            .container{
+                width: 70vw;
+            }
+
+            .agree-subs-p{
+                padding-left:5vw;
+            }
+
+            .button-s-s{
+                width: 30vw;
+            }
+
+            #language{
+                width: 15vw;
+            }
+
+            #input-promo-code{
+                width: 23vw;
+            }
+        }
+
+        
+        @media only screen and (max-width: 768px) {
+
+            .form-1 input{
+                width: 40vw;
+            }
+
+            .names{
+                width: 40vw;
+            }
+            .names input{
+                width: 19vw;
+            }
+
+            .button-s-s{
+                width: 40vw;
+            }
+
+            #input-promo-code{
+                width: 30.5vw;
+            }
+        }
+
+       
+
+        @media only screen and (max-width: 425px) {
+            .container{
+                background: none;
+            }
+
+            .button-s-s{
+                width: 70vw;
+            }
+
+            #input-promo-code{
+                width: 56vw;
+            }
+
+            .agree-subs-p{
+                padding-left:10vw;
+            }
+
+            .form-1 input{
+                width: 60vw;
+            }
+
+            .names{
+                width: 60vw;
+            }
+
+            .names input{
+                width: 29vw;
+            }
+
+            #language{
+                width: 30vw;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            .names input{
+                width: 28vw;
+            }
+
+            #input-promo-code{
+                width: 62vw;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+
+            .promo-code{
+                height: 12vh;
+                width: 80vw;
+            }
+
+            #input-promo-code{
+                width: 76vw;
+            }
+
+            #language{
+                width: 40vw;
+            }
+
+            .button-s-s{
+                width: 80vw;
+            }
+
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="strona-wejsciowa-rejestracja.html"><span class="logo">ViNK</span></a> 
+        <a href="logowanie.html"><div class="sign-out">Sign Out</div></a>
+    </nav>
+
+    <div class="container">
+
+        <div class="text">
+            <p class="amount-of-steps">Step 3 of 3</p>
+            <h1>Set up your credit or debit card</h1>
+            <p class="ch-info">Start your subscription by choosing a payment method and adding the details</p>
+        </div>
+
+        <div class="forms">
+
+           
+
+            <form action="vink.php" method="POST" class="form-1">
+                <input type="text" name="card-number" placeholder="Card Number" id="card-number">
+
+                <span class="names">
+                    
+                        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                   
+                </span>
+
+                <span class="card-info">
+
+                    <label for="expiration-date" id="e-d">Expiration Date
+                    <input type="date" name="expiration-date" id="expiration-date">
+                    </label>
+
+                    <input type="text" name="security-code" id="security-code" placeholder="Security Code">
+                </span>
+
+             </form>
+
+        </div>
+        <div class="info-p-ch">
+
+            <div class="promo-code">
+                X ENTER A PROMO CODE
+                <div class="promo-code-input">
+                    <input type="text" name="promo-code" id="input-promo-code" placeholder="Enter a Promo Code">
+                </div>
+            </div>
+
+            <p class="subscribtion-info">
+                By clicking the “Start Subscribtion” button below, you agree to our <a href="n.html">Terms of Use</a> and that you are over 18 and acknowledge the <a href="n.html">Privacy Statement</a>. Netflix will automatically continue your membership and charge the membership fee (currently 60 zł/month) to your payment method until you cancel. You may cancel at any time to avoid future charges.
+            </p>
+
+            <form action="vink.php" class="form-2" method="POST">
+                <label for="agree-subs" id="a-s">
+                <input type="checkbox" name="agree-subs" id="agree-subs" required>
+            </label>
+            <p class="agree-subs-p">You agree that your membership will begin immediately, and acknowledge that you will therefore lose your right of withdrawal.</p>
+            </form>
+
+        </div>
+
+        <div class="start-subscribtion">
+            
+            <a href="gotowa-rejestracja.html"><div class="button-s-s">START SUBSCRIBTION</div></a>
+
+            <p class="know-more-p">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="n.html">Learn more</a>.
+            </p>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+
+        <select name="language" id="language">
+            <option value="English"  class="lang-option">English</option>
+            <option value="Polish"  class="lang-option">Polish</option>
+            <option value="Deutsch"  class="lang-option">Deutsch</option>
+            <option value="Spanish" class="lang-option">Spanish</option>
+        </select>
+
+        <p class="footer-phone-number">Questions? Call 2544 8569 95 95</p>
+
+        <ol class="info">
+            <li><a href="n.html">Privacy Policy</a></li>
+            <li><a href="n.html">Manage Preferences</a></li>
+            <li><a href="n.html">Terms of Use</a></li>
+            <li><a href="n.html">Corporate Informations</a></li>
+        </ol>
+
+        <p class="footer-2023">©2023 ViNK. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

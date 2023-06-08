@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <style>
+
+    
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: lato;
+            background-image: linear-gradient(to right top, #003451, #1e253d, #201927, #170e15, #000000);
+            color:white;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        *{
+            font-weight: 300;
+        }
+
+        nav{
+            
+            width: 100vw;
+            height: 5vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:0;
+            padding:0;
+            
+            margin-top:4vh;
+        }
+
+     
+
+          
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+
+        li{
+            list-style-type: none;
+        }
+
+        .container{
+            width: 100vw;
+            height: 210vh;
+            background: rgba(0, 0, 255, 0);
+            margin:0;
+            padding:0;
+            margin-top:20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-movie{
+            height: 700px;
+            width: 1500px;
+            background-image: url("main1.png");
+            border-radius: 20px;
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: left;
+            margin-bottom:5vw;
+            padding:2%;
+            margin-top:-23vh;
+            
+           
+
+            text-shadow: 1PX 1PX 10PX BLACK;
+        }
+
+        h1{
+            font-weight: 600;
+            font-size: 8rem;
+            text-shadow: none;
+            color: #16364b;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.219), 0 0 10px rgba(0, 153, 255, 0);
+            
+            display: flex;
+            justify-content: left;
+            align-items: end;
+            margin:0;
+            margin-left:0.7vw;
+            font-family: fjalla one;
+            transition: 0.5s; 
+            
+        }
+
+        h1:hover{
+            color: rgb(31, 63, 83);
+            font-size: 8.2rem;
+        }
+
+        .n-movie{
+            margin:0;
+            width: 9.5vw;
+            background: #00a2ffa4;
+            border-radius: 10px;
+            text-shadow: none;
+            font-size: 1.7rem;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 300;
+           
+            margin-left:1vw;
+            margin-top:0;
+            margin-bottom:41vh;
+            color:#ffffff;
+            transition: 0.2s;
+            
+        }
+
+        .n-movie:hover{
+            background:#00a2ff8e;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.596), 0 0 10px rgba(0, 153, 255, 0.233);
+        }
+
+       
+
+        .watch-now{
+            width: 18vw;
+            height: 9vh;
+            background:#00a2ffb2;
+            color:rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            border-radius: 10px;
+            font-weight: 600;
+            text-shadow: none;
+            margin:0;
+            margin-left:1vw;
+            margin-top:6vh;
+            transition: 0.25s;
+        }
+
+        .watch-now:hover{
+            background:#00a2ffde;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.863), 0 0 10px rgba(0, 153, 255, 0.233);
+            width: 19vw;
+            height: 10vh;
+            margin-top:5vh
+        }
+
+
+      
+
+     
+
+        .movies-r{
+            color:rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+
+            width: 82vw;
+            background: rgba(68, 0, 255, 0);
+            height: 60vh;
+        }
+
+        .m-r-img{
+            color:rgb(72, 255, 0);
+            display: flex;
+            width: 82vw;
+            height: 30vh;
+            background: rgba(255, 0, 0, 0);
+            margin-bottom:20vh;
+            justify-content: space-between;
+            
+        }
+
+        .img-movies{
+          
+            width: 350px;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+
+        }
+       
+
+        .logo{
+            font-size: 7rem;
+          
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            transition: 0.5s;
+            margin-left:2vw;
+        }
+
+        .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 110, 255);
+        }
+
+        h2{
+            font-size: 4rem;
+            margin:0;
+            
+        }
+
+        h2:last-child{
+            margin-bottom:10vh;
+        }
+
+       
+
+        .movies{
+            display: flex;
+            flex-direction: column;
+            width: 82vw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+       
+
+        .popular{
+            width: 82vw;
+            background: rgba(255, 0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            margin:0;
+            margin-bottom:8vh;
+            
+        }
+
+
+       
+
+
+        .pop-movies{
+            height: 425px;
+            width: 290px;
+            background: rgba(0, 0, 0, 0);
+            color:rgba(0, 0, 0, 0.815);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            
+        }
+
+        .imgp{
+            height: 425px;
+            width: 290px;
+            border-radius: 10px;
+            transition: 0.5s;
+            
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .popm{
+            position: absolute;
+            width: 290px;
+            
+            color:rgba(255, 255, 255, 0);
+            opacity: none;
+            transition: 0.5s;
+            height: 45.5%;
+            border-radius: 10px;
+            padding-top:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        .pop-movies:hover .popm {
+            background: rgba(0, 0, 0, 0.774);
+            color:white;
+            opacity: 1;
+
+        }
+
+        
+
+        .pop-movies img:hover{
+            opacity: none;
+        }
+
+        .mri{
+            width: 350px;
+            height: 420px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .mri:hover{
+            width: 370px;
+            height: 450px;
+        }
+
+        h2{
+            color:white;
+            margin-bottom:2vh;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.404), 0 0 10px rgba(255, 255, 255, 0.24);
+            transition: 0.25s;
+        }
+
+        h2:hover{
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.753), 0 0 10px rgba(255, 255, 255, 0.452);
+        }
+
+        
+
+        
+       .footer{
+        width: 100vw;
+        height: 24vh;
+        margin-top:55vh;
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       #search{
+        border: none;
+        background: none;
+        border-bottom:1px solid rgba(255, 255, 255, 0.788);
+        color:white;
+        margin-right:1vw;
+        width: 10vw;
+        height: 4vh;
+        font-size: 1.2rem;
+        
+       }
+
+       #search:focus{
+        color:rgba(255, 255, 255, 0.795);
+       }
+
+    
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       a{
+        text-decoration: none;
+        color:#00a2ff;
+       }
+
+       li a{
+        color:white;
+       }
+
+
+       .profile{
+            background: #00a2ffcb;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right:10vw;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.404), 0 0 10px rgba(0, 153, 255, 0.24);
+            position: relative;
+            margin-left:5vw;
+            transition: 0.5s;
+        }
+
+        .profile:hover{
+            box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 0);
+            width: 3.5vw;
+            height: 6.5vh;
+            margin-left:4.5vw;
+        }
+
+
+
+        .profile-dropdown{
+            
+            position: absolute;
+            margin-top:21.5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            transition: 0.2s;
+            opacity: 0;
+        }
+
+        .profile:hover .profile-dropdown{
+            
+            opacity: 1;
+            
+        }
+
+        .p-d li{
+            display: flex;
+            width: 9vw;
+            margin: 0;
+            padding:0;
+            font-size: 1.2rem;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.308) ;
+            font-weight: 300;
+            transition: 0.5s;
+        }
+
+        .p-d li a{
+            color:rgba(255, 255, 255, 0.863);
+            transition: 0.5s;
+        }
+
+        .p-d li:hover{
+            border-bottom: 0.5px solid rgb(255, 255, 255) ;
+        }
+
+        .p-d li a:hover{
+            color:#ffffff;
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgb(0, 153, 255);
+        }
+
+        .p-d{
+            background: rgba(0, 0, 0, 0.568);
+            border: 1px rgba(255, 255, 255,0.274) solid;
+            margin: 0;
+            padding:0;
+            line-height: 3.7vh;
+            width: 10vw;
+            height: 16vh;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .p-d li:last-child{
+            border:none;
+        }
+
+        #navi{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60vw;
+            
+            font-size: 1.2rem;
+        }
+
+        #navi li a{
+            color:white;
+            display: flex;
+            padding-left:1vw;
+            padding-right:1vw;
+            justify-content: center;
+            align-items: center;
+            width: 2vw;
+            display: block;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+      
+
+        #navi li{
+            width: 4.2vw;
+            text-align: center;
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:1%;
+        }
+
+        #navi li a:hover{
+            
+            animation: border-bottom ease-out;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes border-bottom{
+            from{
+                border-bottom:none;
+            }
+            1%{
+                border-bottom:1px solid rgb(255, 255, 255) ;
+                width: 1%;
+            }
+            to{
+                border-bottom:1px solid rgb(0, 174, 255) ;
+                width: 100%;
+            }
+        }
+        #navi li:last-child{
+            padding-left:1vw
+        }
+
+        .info a{
+            color:#00a2ff;
+        }
+
+      
+    
+
+        @media only screen and (max-width: 1440px) {
+            nav{
+                flex-direction: column;
+                margin-bottom:60vh;
+            }
+            .container{
+                height: 430vh;
+            }
+            .main-movie{
+                width: 70%;
+            }
+
+            .n-movie{
+                width: 13vw;
+            }
+
+            .watch-now{
+                width: 25vw;
+            }
+
+            h1{
+                margin-top:100%
+            }
+
+            .popular{
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .pop-movies{
+                margin-bottom:5vh;
+            }
+
+            .m-r-img{
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 170vh;
+            }
+
+            .img-movies{
+                margin-bottom:2vh;
+            }
+
+            .footer{
+                margin-top:380vh;
+            }
+
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="strona-glowna.html"><span class="logo">ViNK</span></a>
+        <ul id="navi">
+            <li><a href="strona-glowna.html">HOME</a></li>
+            <li><a href="#">MOVIES</a></li>
+            <li><a href="#">SERIES</a></li>
+            <li><input type="search" name="search" id="search" placeholder="Search.."> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg></a></li>
+        </ul>
+        <div class="profile">
+            <div class="profile-dropdown">
+                <ul class="p-d">
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-movie">
+            <h1>INTERSTELLAR</h1>
+            <div class="n-movie">NEW MOVIE</div>
+           <a href="#" class="watch-now">WATCH NOW</a>
+        </div>
+
+        <div class="movies">
+            <h2>TOP SERIES</h2>
+            <div class="popular">
+                <div class="pop-movies">
+                    <img src="pop1.png" alt="SPIDER-MAN: POPRZEZ MULTIWERSUM" class="imgp">
+                    <p class="popm">From Brooklyn, Miles ends up in the multiverse. Together with Gwen Stacy, they meet other Spider-Man who are tasked with protecting the world from threats. When characters argue about how come they don't perform.</p>
+                </div>
+
+                <div class="pop-movies">
+                    <img src="pop2.jpeg" alt="STRAŻNICY GALAKTYKI: VOLUME 3" class="imgp">
+                    <p class="popm">Still reeling from the loss of Gamora, Peter Quill assembles his team to defend the universe - a mission that could spell the end of the Guardians if it fails</p>
+                </div>
+
+                <div class="pop-movies">
+                    <img src="pop3.jpg" alt="SUPER MARIO BROS. FILM" class="imgp">
+                    <p class="popm">Mario, a Brooklyn plumber, joins Princess Peach and the humanoid Toad on an adventurous journey to save the world from the fire-breathing turtle Bowser.</p>
+
+                </div>
+
+                <div class="pop-movies">
+                    <img src="pop4.jpg" alt="SZYBCY I WŚCIEKLI 10" class="imgp">
+                    <p class="popm">Over the course of many missions and against the odds, Dom Toretto and his family have outsmarted and surpassed every enemy in their path. Now they must face the most dangerous enemy they have ever faced.</p>
+
+                </div>
+
+                <div class="pop-movies">
+                    <img src="pop5.jpg" alt="MAŁA SYRENKA" class="imgp">
+                    <p class="popm">Ariel the mermaid falls in love with Prince Eric. In order to meet him again, she makes a deal with a sea witch.</p>
+
+                </div>
+
+            </div>
+
+        
+            <div class="movies-r">
+                <h2>THRILLERS AND HORRORS</h2>
+                <div class="m-r-img">
+                    <div class="img-movies">
+                        <a href="#"><img src="mri1.png" alt="" class="mri"></a>
+                    </div>
+
+                    <div class="img-movies">
+                        <a href="#"><img src="mri2.png" alt="" class="mri"></a>
+                    </div>
+
+                    <div class="img-movies">
+                        <a href="#"><img src="mri3.png" alt="" class="mri"></a>
+                    </div>
+
+                    <div class="img-movies">
+                        <a href="#"><img src="mri4.png" alt="" class="mri"></a>
+                    </div>
+
+                </div>
+
+                <h2>SCIENCE FICTION</h2>
+                <div class="m-r-img">
+                    
+                    <div class="img-movies">
+                        <a href="#"><img src="mri5.png" alt="" class="mri"></a>
+                    </div>
+
+                    <div class="img-movies">
+                        <a href="#"><img src="mri6.png" alt="" class="mri"></a>
+                    </div>
+
+                    <div class="img-movies">
+                        <a href="#"><img src="mri7.png" alt="" class="mri"></a>
+                    </div>
+
+                    <div class="img-movies">
+                        <a href="#"><img src="mri9.png" alt="" class="mri"></a>
+                    </div>
+                </div>
+
+                 
+
+            </div>
+
+
+        </div>
+    </div>
+
+    
+    <div class="footer">
+
+        <select name="language" id="language">
+            <option value="English"  class="lang-option">English</option>
+            <option value="Polish"  class="lang-option">Polish</option>
+            <option value="Deutsch"  class="lang-option">Deutsch</option>
+            <option value="Spanish" class="lang-option">Spanish</option>
+        </select>
+
+        <p class="footer-phone-number">Questions? Call 2544 8569 95 95</p>
+
+        <ol class="info">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Manage Preferences</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Corporate Informations</a></li>
+        </ol>
+
+        <p class="footer-2023">©2023 ViNK. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

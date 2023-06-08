@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <title>ViNK.com</title>
+
+    <style>
+         body{
+            margin:0;
+            padding:0;
+            background-image: linear-gradient(to right top, #003451, #1e253d, #201927, #170e15, #000000);
+        }
+
+        *{
+            font-family: lato;
+        }
+
+        nav{
+            width:100vw;
+            height: 9vh;
+            text-align: center;
+        }
+        
+    
+
+        .logo{
+            font-size: 5rem;
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            line-height: 7vh;
+            padding-top:2vh;
+            padding-bottom:2vh;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:1%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10vh;
+            color:white;
+            background-image: radial-gradient(circle, rgba(0, 183, 255, 0.11) 0%, rgba(0, 0, 0, 0) 40%);
+        }
+
+        h1{
+            font-size: 5rem;
+            font-weight: 300;
+            margin:0;
+            transition: 0.5s;
+        }
+
+        .info-p{
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .icon{
+            width: 70px;
+            height: 70px;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+            padding:0;
+        }
+
+        *::-webkit-scrollbar {
+    display: none;}
+
+    .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 26, 255);
+        }
+
+
+        .continue{
+            width: 15vw;
+    height: 6vh;
+    background: rgba(0, 0, 0, 0.452);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.5s;
+        }
+
+        .continue:hover{
+            width: 16vw;
+        height: 7vh;
+        background: #00a2ff88;
+        font-size: 1.5rem;
+        }
+
+        .footer{
+        width: 100vw;
+        height: 25.15vh;
+        margin-top:20.9vh;
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        margin-top:1vh;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       a{
+        text-decoration: none;
+        color:#00a2ff;
+       }
+
+
+
+
+
+       @media only screen and (max-width: 768px) {
+        .continue{
+            width: 25vw;
+        }
+
+        #language{
+            width: 25vw;
+        }
+       }
+
+       @media only screen and (max-width: 425px) {
+        .continue{
+            width: 30vw;
+        }
+
+        #language{
+            width: 35vw;
+        }
+       }
+
+       @media only screen and (max-width: 320px) {
+        .container{
+            background: none;
+        }
+        .continue{
+            width: 40vw;
+        }
+
+        .info{
+            width: 80vw;
+        }
+       }
+
+       h1:hover{
+        text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+      
+       }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="strona-wejsciowa-rejestracja.html"><span class="logo">ViNK</span></a>
+    </nav>
+
+    <div class="container">
+        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+          </svg></div>
+        <h1>Success!</h1>
+        <p class="info-p">Your account has been created successfully.</p>
+        <a href="strona-glowna.html"><div class="continue">CONTINUE</div></a>
+    </div>
+
+
+    <div class="footer">
+
+        <select name="language" id="language">
+            <option value="English"  class="lang-option">English</option>
+            <option value="Polish"  class="lang-option">Polish</option>
+            <option value="Deutsch"  class="lang-option">Deutsch</option>
+            <option value="Spanish" class="lang-option">Spanish</option>
+        </select>
+
+        <p class="footer-phone-number">Questions? Call 2544 8569 95 95</p>
+
+        <ol class="info">
+            <li><a href="n.html">Privacy Policy</a></li>
+            <li><a href="n.html">Manage Preferences</a></li>
+            <li><a href="n.html">Terms of Use</a></li>
+            <li><a href="n.html">Corporate Informations</a></li>
+        </ol>
+
+        <p class="footer-2023">©2023 ViNK. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

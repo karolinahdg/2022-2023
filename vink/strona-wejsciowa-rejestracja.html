@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <title>ViNK.com</title>
+    <style>
+
+        
+     
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+        .container{
+            width: 100vw;
+        }
+
+        body{
+            margin:0;
+            padding:0;
+
+            font-family: lato;
+         
+            color:rgb(255, 255, 255);
+            background-image: linear-gradient(to left, #003451, #1a2942, #201f32, #1e1622, #170e15, #170e15, #170e15, #170e15, #1e1622, #201f32, #1a2942, #003451);        }
+
+
+
+        .nav{
+            margin:0;
+            padding:0;
+            width:100vw;
+            height: 8vh;
+            padding-top:2vh;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left:3vw;
+            padding-right:3vw;
+        }
+
+        .logo{
+            font-size: 5rem;
+          
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            transition: 0.5s;
+        }
+
+        .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 26, 255);
+        }
+
+        .nav-right{
+            height: 4vh;
+            width: 17vw;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .b-log-in{
+            border:1px rgba(255, 255, 255, 0.596) solid;
+            background: none;
+            border-radius:5px;
+            width:5vw;
+            transition: 0.5s;
+        }
+
+        .b-sign-in{
+           border:none;
+            background: rgba(0, 183, 255, 0.459);
+            color:rgba(255, 255, 255, 0.767);
+            border-radius:5px;
+            width:5vw;
+            margin-right: 5vw;
+            transition: 0.5s;
+        }
+
+        .log-in{
+            
+            color:rgba(255, 255, 255, 0.877);
+            font-size: 1.2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh;
+            transition: 0.5s;
+        }
+
+        .log-in:hover{
+            background: rgba(255, 255, 255, 0.205);
+        }
+
+        .sign-in{
+            background: none;
+            border:none;
+            color:rgba(255, 255, 255, 0.877);
+            font-size: 1.2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh;
+            width: 5vw;
+            transition: 0.5s;
+            border-radius:5px;
+        }
+
+        .sign-in:hover{
+            background: #00a2ffce;
+        }
+
+
+
+
+
+
+
+
+
+
+        .c-offer{
+            padding:0;
+            margin:0;
+            width:65vw;
+            height: 45vh;
+            background-image: radial-gradient(circle, rgba(0, 162, 255, 0.185) 0%, rgba(0, 0, 0, 0) 46%);
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-right: auto;
+            margin-left: auto;
+
+            margin-top:5vh;
+
+            border-radius: 25px 25px 25px 25px;
+
+           
+        }
+
+        .payment-method{
+            padding:0;
+            margin:0;
+
+            width:33vw;
+            height: 20vh;
+            background: rgba(255, 0, 98, 0);
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .r-p-month, .r-p-year{
+            width:14vw;
+            height: 19vh;
+            margin-top:4vh;
+            margin-bottom:4vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            background-image: linear-gradient(0deg, rgba(0, 140, 255, 0.137) 0%, rgba(255, 255, 255, 0.027) 62%);
+            border-radius: 10px;
+        }
+
+        .r-p-month:hover, .r-p-year:hover{
+            width: 16vw;
+            height: 21vh;
+        }
+
+      
+       
+        .button-sign-in-bigger{
+            width:8vw;
+            height: 6vh;
+            transition: 0.5s;
+            margin-top:4vh;
+        }
+
+        .button-sign-in-bigger:hover{
+            background-color: #00a2ff88;
+            color: rgb(255, 255, 255);
+            width: 11vw;
+            height: 7vh;
+            font-size: 1.8rem;
+        }
+
+        .offer-p{
+            margin-top:2vh;
+            font-size: 1.3rem;
+
+            font-weight: 300;
+        }
+
+        .r-p-time{
+            font-size: 1rem;
+            position:static;
+           
+            color:rgba(255, 255, 255, 0.726);
+        }
+
+        .r-p-price{
+            position: absolute;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+        .r-p-cancel{
+            position:static;
+            font-size: 1rem;
+            color:rgba(255, 255, 255, 0.486);
+        }
+
+        .r-p-save{
+            position:static;
+
+            color:rgba(0, 153, 255, 0.829);
+            font-size: 1rem;
+        }
+
+        .button-sign-in-bigger{
+            font-size: 1.6rem;
+            margin-bottom:1vh;
+            height: 6vh;
+            width:10vw;
+            
+            border-radius:10px;
+            background: none;
+            
+           
+            font-weight: 600;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: rgba(0, 0, 0, 0.452);
+            color: rgb(255, 255, 255);
+            
+        }
+
+        .button-sign-in-bigger:hover{
+            background-color: #00a2ff88;
+            color: rgb(255, 255, 255);
+            width: 10.5vw;
+            height: 6.5vh;
+            font-size: 1.8rem;
+        }
+
+        .bigger-a{
+            color:rgb(255, 255, 255);
+           
+        }
+
+       
+
+        .logo-offer{
+            font-size: 8rem;
+            margin: 0;
+            padding: 0;
+            line-height: 13vh;
+        }
+
+        .r-p-p{
+            color:#ffffff
+;
+            font-weight: 300;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .all-the-must-sees{
+            width:100vw;
+            height: 50vh;
+
+            background: rgba(0, 0, 0, 0.192);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            margin-top:5vh;
+
+        }
+
+        .a-t-m-s-movies{
+            width:80vw;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+        .a-t-m-s-m-pic{
+            width:300px;
+            height: 250px;
+            border-radius: 10px;
+            background: rgb(0, 0, 0);
+            box-shadow: 21px 21px 21px -12px rgba(0, 0, 0, 0.74);
+           transition: 0.5s;
+        }
+
+        .a-t-m-s-m-pic:hover{
+            width: 325px;
+            height: 275px;
+        }
+
+        h4{
+            font-size: 4rem;
+            position: relative;
+            margin:0;
+            margin-top:5vh;
+            text-align: center;
+            line-height: 3vh;
+            font-weight: 300;
+            transition: 0.5s;
+        }
+
+        h4:hover, .a-t-m-s-text:hover, .text-p:hover, .banner-text-h:hover{
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+        }
+
+        .a-t-m-s-text{
+            padding-bottom:1vh;
+            transition: 0.5s;
+        }
+
+        .text-p{
+            padding-top:1vh;
+            font-size: 1.2rem;
+            line-height: 1vh;
+            transition: 0.5s;
+        }
+
+
+
+
+
+
+
+
+
+
+        .banner{
+            width:100vw;
+            height: 40vh;
+
+            background-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 162, 255, 0) 100%);
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top:5vh;
+        }
+
+        .banner-pic{
+            width:480px;
+            height: 370px;
+
+            margin-left:2vw;
+            margin-right:2vw;
+        }
+
+        h3{
+            font-size: 3rem;
+            margin:0;
+            margin-bottom:2vh;
+            font-weight: 300;
+            transition: 0.5s;
+        }
+
+
+
+
+        .text-p{
+            color:#ffffffb7;
+            font-weight: 100;
+        }
+
+
+
+
+
+       .questions-n-answers{
+        width:40vw;
+       
+        background:#0000004d;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        margin-top:3vh;
+
+        padding-top:1vh;
+        padding-bottom:1vh;
+
+        margin-left:auto;
+        margin-right:auto;
+
+       }
+
+       .q{
+        position: relative;
+        display: inline-block;
+        font-weight:600;
+        padding-top:1vh;
+        padding-bottom:1vh;
+        color:white;
+        margin-left:2vw;
+        margin-right:2vw;
+
+       }
+
+       .a{
+        display: none;
+        font-weight:400;
+        color:rgba(255, 255, 255, 0.788);
+       }
+
+       .q:active .a{
+        display: block;
+
+       }
+
+       .hint{
+        font-size: 0.8rem;
+        margin-left:2vw;
+        color:#00a2ffbb;
+       }
+
+       .q-n-a{
+        width:100vw;
+        height: 44vh;
+       }
+
+       .f-a-q{
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin:0;
+        padding:0;
+        margin-top:3vh;
+
+        font-weight: 300;
+       }
+
+
+    
+
+
+
+       .footer{
+        width: 100vw;
+        height: 24vh;
+        
+        font-size: 0.7rem;
+        background: rgba(0, 0, 0, 0.671);
+        color:#00a2ffcb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .info{
+        list-style-type:none;
+
+        width:40vw;
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:3vh;
+        margin-top:3vh;
+       }
+
+       #language{
+        width: 8vw;
+        height: 6vh;
+
+        margin-bottom:1vh;
+        margin-top:1vh;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        border:none;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+       }
+
+       .lang-option{
+        background-color: black;
+        color:white;
+ 
+
+       }
+
+       .footer-phone-number{
+        color:white;
+        font-size: 1rem;
+        margin:0;
+       }
+
+       a{
+        text-decoration: none;
+        color:#00a2ff;
+       }
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 1772px) {
+        .c-offer{
+            width:60vw;
+        }
+
+        .r-p-month, .r-p-year{
+            width:13vw;
+        }
+    }
+
+    @media only screen and (max-width: 1440px) {
+        .log-in, .sign-in{
+            width: 6vw;
+        }
+
+        .b-log-in, .b-sign-in{
+            width: 7vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-right{
+            width: 16vw;
+            justify-content: space-between;
+        }
+
+        .button-sign-in-bigger{
+            font-size: 1.3rem;
+        }
+
+        .a-t-m-s-m-pic{
+            width: 250px;
+            height: 200px;
+        }
+
+        .r-p-price{
+            font-size: 1.5rem;
+        }
+
+        .all-the-must-sees{
+            height: 40vh;
+        }
+
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .nav-right{
+            width: 20vw;
+        }
+
+        .b-log-in, .b-sign-in{
+            width: 9vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .log-in, .sign-in{
+            width: 20vw;
+        }
+
+        .button-sign-in-bigger{
+            width:12vw;
+            height: 5vh;
+            font-size: 1.1rem;
+        }
+
+        .a-t-m-s-m-pic{
+            width: 200px;
+            height: 150px;
+        }
+
+        .all-the-must-sees{
+            height: 37vh;
+        }
+
+        .a-t-m-s-movies{
+            width:90vw;
+        }
+
+        .banner-pic{
+            width:450px;
+            height: 340px;
+        }
+
+        .banner-text{
+            padding-left:5vw;
+            padding-right:5vw;
+        }
+
+        #language{
+            font-size: 1.1rem;
+        }
+
+        .r-p-price{
+            font-size: 1.4rem;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .offer-p{
+            padding-left:2vw;
+        }
+
+        .r-p-time{
+            font-size: 0.7rem;
+        }
+
+        .r-p-price{
+            font-size: 1rem;
+        }
+
+        .r-p-cancel, .r-p-save{
+            font-size: 0.7rem;
+        }
+
+        .r-p-year, .r-p-month{
+            height: 8vh;
+        }
+
+        .payment-method{
+            height: 6vh;
+        }
+
+        .button-sign-in-bigger{
+            width: 15vw;
+            font-size: 1rem;
+            height: 4vh;
+        }
+
+        .c-offer{
+            height: 40vw;
+        }
+
+        .offer-p{
+            font-size: 0.7rem;
+            padding-bottom:1vh;
+        }
+
+        .nav-right{
+            width: 25vw;
+        }
+
+        .b-log-in, .b-sign-in{
+            width: 12vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .log-in, .sign-in{
+            width: 13vw;
+        }
+
+        .a-t-m-s-m-pic{
+            width: 150px;
+            height: 110px;
+        }
+
+        .all-the-must-sees{
+            height: 30vh;
+        }
+
+        .banner-pic{
+           display: none;
+        }
+
+      .banner{
+        height: 30vh;
+      }
+
+      .q, .a{
+        font-size: 0.7rem;
+      }
+
+      .q-n-a{
+        height: 45vh;
+      }
+
+      #language{
+        font-size: 1rem;
+        width: 10vw;
+      }
+
+    
+    }
+
+    @media only screen and (max-width: 425px) {
+        .a-t-m-s-m-pic{
+            display: none;
+        }
+
+        .c-offer{
+            width: 70vw;
+            height: 42vh;
+        }
+
+        .r-p-year, .r-p-month{
+            height: 13vh;
+            width: 25vw;
+            margin-top:11vh;
+            margin-bottom:5vh;
+        }
+
+        .payment-method{
+            width: 60vw;
+        }
+
+        .button-sign-in-bigger{
+            width: 40vw;
+            margin-top:9vh;
+        }
+
+        .offer-p{
+            padding-left:4vw;
+            padding-right:4vw;
+        }
+
+        .nav-right{
+            width: 39vw;
+        }
+
+        .b-log-in, .b-sign-in{
+            width: 18vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .log-in, .sign-in{
+            width: 18vw;
+            font-size: 1rem;
+        }
+
+        .a-t-m-s-text{
+            text-align: center;
+        }
+
+        .all-the-must-sees{
+            height: 17vh;
+        }
+
+        .banner-text-h{
+            font-size: 2rem;
+        }
+
+        .banner{
+            height: 20vh;
+        }
+
+        .f-a-q{
+            font-size: 2rem;
+            padding-left:3vw;
+        }
+
+        .questions-n-answers{
+            width: 70vw;
+        }
+
+        .q-n-a{
+            height: 49vh;
+        }
+
+        #language{
+            width: 25vw;
+        }
+
+        .info{
+            width: 80vw;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .all-the-must-sees{
+            height: 25vh;
+        }
+
+        .nav-right{
+            height: 7vh;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+        .b-sign-in, .b-log-in{
+            display: flex;
+            align-items: center;
+            height: 5vh;
+        }
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            height: 18vh;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="nav-left">
+            <a href="strona-wejsciowa-rejestracja.html"><span class="logo">ViNK</span></a>
+        </div>
+        <div class="nav-right">
+            <div class="b-log-in">
+                <a href="logowanie.html" class="log-in">LOG IN</a>
+            </div>
+
+            <div class="b-sign-in">
+                <a href="rejestracja.html" class="sign-in">SIGN IN</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="c-offer">
+            <span class="logo logo-offer">ViNK</span>
+            <p class="offer-p">VINK is the home of iconic, award-winning series, movies, and more</p>
+
+            <div class="payment-method">
+                <div class="r-p-month">
+                    <p class="r-p-time">Pay Monthly</p>
+                    <p class="r-p-price">30 zł<span class="r-p-p">/month</span></p>
+                    <p class="r-p-cancel">Cancel anytime.</p>
+                </div>
+                
+                <div class="r-p-year">
+                    <p class="r-p-time">Pay Yearly</p>
+                    <p class="r-p-price">230 zł<span class="r-p-p">/year</span></p>
+                    <p class="r-p-save">Save 130 zł.</p>
+                </div>
+            </div>
+
+            <a href="rejestracja.html" class="bigger-a">
+            <div class="button-sign-in-bigger">
+                SIGN IN NOW
+            </div>
+        </a>
+
+        </div>
+
+        <div class="all-the-must-sees">
+            <div class="a-t-m-s-text">
+                <h4>All the Must-Sees</h4>
+                <p class="text-p">Enjoy all our groundbreaking titles, along with critically acclaimed series.</p>
+            </div>
+
+            <span class="a-t-m-s-movies">
+             <img src="img1.png" alt="euphoria" class="a-t-m-s-m-pic">
+             <img src="img2.png" alt="stranger things" class="a-t-m-s-m-pic">
+             <img src="img3.png" alt="guardians of the galaxy" class="a-t-m-s-m-pic">
+             <img src="img4.png" alt="jurassic world" class="a-t-m-s-m-pic">
+            </span>
+        </div>
+
+        <div class="banner">
+            <img src="banner1.png" alt="banner1" class="banner-pic">
+            <div class="banner-text">
+                <h3 class="banner-text-h">Download your shows <br>
+                    to watch offline</h3>
+                <p class="text-p">Save your favorites easily and always have something to watch.</p>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner-text">
+                <h3 class="banner-text-h">Watch everywhere</h3>
+                <p class="text-p">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <img src="banner2.png" alt="banner2" class="banner-pic">
+        </div>
+
+        <div class="q-n-a">
+            <div class="f-a-q">Frequently Asked Questions</div>
+            <div class="questions-n-answers">
+
+                <div class="q">What is ViNK?
+                    <div class="a">ViNK is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+                </div>
+            
+                <div class="q">How much does ViNK cost?
+                    <div class="a">Watch ViNK on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from 30 zł/moth to 230 zł/year. No extra costs, no contracts.</div>
+                </div>
+            
+                <div class="q">Where can I watch?
+                    <div class="a">Watch anywhere, anytime. Sign in with your ViNK account to watch instantly on the web at vink.com from your personal computer or on any internet-connected device that offers the ViNK app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+            
+                        You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take ViNK with you anywhere.</div>
+                </div>
+            
+                <div class="q">How do I cancel?
+                    <div class="a">ViNK is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.</div>
+                </div>
+            
+                <p class="hint">Click on and hold to show the answers!</p>
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <select name="language" id="language">
+                <option value="English"  class="lang-option">English</option>
+                <option value="Polish"  class="lang-option">Polish</option>
+                <option value="Deutsch"  class="lang-option">Deutsch</option>
+                <option value="Spanish" class="lang-option">Spanish</option>
+            </select>
+    
+            <p class="footer-phone-number">Questions? Call 2544 8569 95 95</p>
+    
+            <ol class="info">
+                <li><a href="n.html">Privacy Policy</a></li>
+                <li><a href="n.html">Manage Preferences</a></li>
+                <li><a href="n.html">Terms of Use</a></li>
+                <li><a href="n.html">Corporate Informations</a></li>
+            </ol>
+    
+            <p class="footer-2023">©2023 ViNK. All Rights Reserved.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

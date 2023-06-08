@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@700&family=Lato:wght@300;400;900&family=MuseoModerno:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+    <title>ViNK.com</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-image: linear-gradient(to right top, #003451, #1e253d, #201927, #170e15, #000000);
+        }
+
+        *{
+            font-family: lato;
+        }
+
+        nav{
+            width:100vw;
+            height: 9vh;
+            text-align: center;
+        }
+
+        .logo{
+            font-size: 5rem;
+            font-family: museomoderno;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(74, 183, 255, 0.582), 0 0 10px rgba(0, 153, 255, 0.233);
+            color: #00a2ff;
+            line-height: 7vh;
+            padding-top:3vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        a{
+            text-decoration: none;
+            color:#00a2ff;
+        }
+
+        .container{
+            width:70vw;
+            height: 130vh;
+            background-image: radial-gradient(circle, rgba(0, 162, 255, 0.055) 0%, rgba(0, 0, 0, 0) 41%);
+            margin-left:auto;
+            margin-right:auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top:4vh;
+            margin-bottom:7vh;
+            border-radius: 20px;
+            color:white;
+        }
+
+        *::-webkit-scrollbar {
+    display: none;
+  }
+
+        .text{
+            text-align: center;
+            height: 30vh;
+        }
+
+        .blocks{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 57vw;
+            
+        }
+
+        .logo:hover{
+            text-shadow: 0 0 15px rgb(0, 153, 255), 0 0 10px rgb(0, 26, 255);
+        }
+
+
+        .b-yearly, .b-monthly{
+            width: 26vw;
+            height: 40vh;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.308) 62%);
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+
+        .b-yearly:hover, .b-monthly:hover{
+            width: 28vw;
+            height: 42vh;
+        }
+
+        h1{
+            font-size: 4rem;
+            line-height: 4vh;
+            font-weight: 300;
+            margin:0;
+            padding:0;
+            margin-top:4vh;
+            margin-bottom:5vh;
+            transition: 0.5s;
+        }
+
+        h1:hover{
+            text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgba(0, 153, 255, 0.24);
+
+        }
+
+        .h-p{
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin:0;
+            padding:0;
+            margin-top:3vh
+        }
+
+        .b-y-m-time{
+            font-size: 3.5rem;
+            font-weight: 400;
+            
+        }
+
+        .b-y-m-price{
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .b-price{
+            color:rgba(255, 255, 255, 0.705);
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        .b-y-m-info{
+            font-size: 1rem;
+        }
+
+        .b-y-info{
+            height: 8vh;
+        }
+
+        .b-y-main{
+            height: 12vh;
+            padding:4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li{
+            color:rgba(255, 255, 255, 0.925);
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .continue{
+            width:20vw;
+            height: 6vh;
+            line-height: 4vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:4vh;
+            border-radius: 20px;
+        transition: 0.5s;
+
+        }
+
+        .continue:hover{
+            width: 21vw;
+            height: 7vh;
+            background: #00a2ff88;
+        }
+
+        .continue-a:hover{
+            font-size: 2rem;
+        }
+
+        .continue-a{
+            color:rgba(255, 255, 255, 0.87);
+            font-weight: 600;
+            font-size: 1.7rem;
+        }
+
+        .amount-of-steps{
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+
+
+        @media only screen and (max-width: 425px) {}
+
+        @media only screen and (max-width: 1024px) {
+            h1{
+                line-height: 6vh;
+            }
+
+            .blocks{
+                margin-top:5vh;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .blocks{
+                width: 85vw;
+
+                margin-top:7vh;
+            }
+
+            .b-yearly,.b-monthly{
+                width: 40vw;
+            }
+
+            .continue{
+                width: 25vw;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .blocks{
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top:15vh;
+                margin-bottom:10;
+                height: 82vh;
+                width: 80vw;
+                margin-top:16vh
+            }
+
+            .container{
+                width: 80vw;
+
+                background: none;
+            }
+
+            .b-yearly,.b-monthly{
+                width: 70vw;
+            }
+
+            .continue{
+                width: 45vw;
+            }
+
+        
+        }
+
+        @media only screen and (max-width: 320px) {
+            .continue{
+                width: 55vw;
+            }
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="strona-wejsciowa-rejestracja.html"><span class="logo">ViNK</span></a>
+    </nav>
+    
+    <div class="container">
+
+        <div class="text">
+            <p class="amount-of-steps">Step 1 of 3</p>
+            <h1>Choose your ViNK experience</h1>
+            <p class="h-p">Enjoy the biggest blockbusters, boldest stories and exclusive originals.</p>
+        </div>
+
+        <div class="blocks">
+
+            <div class="b-yearly">
+                <div class="b-y-main">
+                    <div class="b-y-m-time">Yearly</div>
+                    <div class="b-y-m-price">230 zł<span class="b-price">/year</span></div>
+                    <div class="b-y-m-info">Save 130 zł</div>
+                </div>  
+                <div class="b-y-info"><ul>
+                    <li>Equivalent to just 19,17 zł/month when <br> you pay for 12 months upfront.</li>
+                </ul>
+                </div>
+
+                <a href="sign-in2-y.html" class="continue-a">
+                    <div class="continue">
+                    CONTINUE
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="b-monthly">
+                <div class="b-y-main">
+                    <div class="b-y-m-time">Monthly</div>
+                    <div class="b-y-m-price">30 zł<span class="b-price">/month</span></div>
+                </div>
+                <div class="b-y-info">
+
+                    <ul>
+                        <li>Cancel anytime.</li>
+                    </ul>
+
+                </div>
+
+                <a href="sign-in2-m.html" class="continue-a">
+                    <div class="continue">
+                    CONTINUE
+                    </div>
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
